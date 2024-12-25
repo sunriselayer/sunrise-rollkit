@@ -139,6 +139,7 @@ func (sunrise *SunriseDA) Submit(ctx context.Context, daBlobs []da.Blob, gasPric
 	if err := <-errorChan; err != nil {
 		return nil, err
 	}
+	return ids, nil
 }
 
 func (sunrise *SunriseDA) Get(ctx context.Context, ids []da.ID, namespace da.Namespace) ([]da.Blob, error) {

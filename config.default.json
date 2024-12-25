@@ -1,0 +1,6 @@
+{
+    "server_url": "http://localhost:8000",
+    "data_shard_count": 5,
+    "parity_shard_count": 5,
+    "grpc_server_address": "localhost:7980"
+}
