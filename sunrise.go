@@ -85,7 +85,7 @@ func (sunrise *SunriseDA) Submit(ctx context.Context, daBlobs []da.Blob, gasPric
 				return
 			}
 
-			response, err := http.Post(sunrise.config.ServerURL+"/publish", "application/json", bytes.NewBuffer(requestBody))
+			response, err := http.Post(sunrise.config.ServerURL+"/api/publish", "application/json", bytes.NewBuffer(requestBody))
 			if err != nil {
 				errorChan <- err
 				return
